@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="#">Cómo usar</a>
+                        <a class="nav-link" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h1 class="text-left">Calculadora</h1>
+        <form action="#" id="form">
+            <div class="row contenedor">
+                <div class="col-sm">
+                    <h2 class="text-center">Elija la operación que quiere hacer</h2>
+                    <select id="seleccion" onchange="operaciones()">
+                        <option>Calcular:</option>
+                        <option>SUMAR</option>
+                        <option>RESTAR</option>
+                        <option>MULTIPLICAR</option>
+                        <option>DIVIDIR</option>
+                    </select>
+                    <input type="number" id="sNum1" class="form-control" placeholder="Valor 1">
+                    <input type="number" id="sNum2" class="form-control" placeholder="Valor 2">
+                </div>
+                <div class="container">
+                    <button class="btn btn-secondary btn-sm" onclick="limpiar();">Vaciar campos</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer></footer>
+
+    <script type="text/javascript" src="/js/javascriptCalculadora.js"></script>
+</body>
+
+</html>
